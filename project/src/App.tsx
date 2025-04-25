@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import GameChangedSection from './components/GameChangedSection';
 import PillarsSection from './components/PillarsSection';
-import SolutionSection from './components/SolutionSection';
-import TestimonialsSection from './components/TestimonialsSection';
 import BenefitsSection from './components/BenefitsSection';
-import PersuasiveCopySection from './components/PersuasiveCopySection';
-import UnlockPerformanceSection from './components/UnlockPerformanceSection';
+import MovementsSection from './components/MovementsSection';
+import TestimonialsSection from './components/TestimonialsSection';
 import OfferSection from './components/OfferSection';
 import GuaranteeSection from './components/GuaranteeSection';
-import MovementsSection from './components/MovementsSection';
+import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -45,20 +42,17 @@ function App() {
   }, []);
   
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-emerald-50">
       <Header />
       <main>
         <HeroSection />
-        <GameChangedSection />
         <PillarsSection />
-        <PersuasiveCopySection />
-        <SolutionSection />
-        <TestimonialsSection />
         <BenefitsSection />
-        <UnlockPerformanceSection />
+        <MovementsSection />
+        <TestimonialsSection />
         <OfferSection />
         <GuaranteeSection />
-        <MovementsSection />
+        <FAQSection />
       </main>
       <Footer />
     </div>

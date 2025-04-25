@@ -29,32 +29,32 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-16 px-6 md:px-12 bg-gradient-to-b from-gray-900 to-black">
+    <section className="py-20 px-6 md:px-12 bg-emerald-600">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
-          DEPOIMENTOS DE QUEM <span className="text-green-500">DESBLOQUEOU A MOBILIDADE</span> E VIU RESULTADO NO BOX
+          DEPOIMENTOS DE QUEM <span className="text-yellow-400">DESBLOQUEOU A MOBILIDADE</span> E VIU RESULTADO NO BOX
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800 hover:border-green-500 transition-all duration-300"
+              className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-yellow-400/50 transition-all duration-300"
             >
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-green-500"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400"
                   />
                 </div>
                 <div className="flex-grow">
-                  <p className="text-gray-300 text-lg mb-4">"{testimonial.text}"</p>
+                  <p className="text-white text-lg mb-4">"{testimonial.text}"</p>
                   <div className="flex items-center gap-2">
-                    <span className="text-green-500 font-semibold">{testimonial.name}</span>
-                    <span className="text-gray-500">•</span>
-                    <span className="text-gray-500">{testimonial.location}</span>
+                    <span className="text-yellow-400 font-semibold">{testimonial.name}</span>
+                    <span className="text-white/50">•</span>
+                    <span className="text-white/80">{testimonial.location}</span>
                   </div>
                 </div>
               </div>

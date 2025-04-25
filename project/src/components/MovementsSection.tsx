@@ -35,12 +35,12 @@ const movements = [
 
 const MovementsSection = () => {
   return (
-    <section className="py-16 px-6 md:px-12 bg-gradient-to-b from-gray-900 to-black">
+    <section className="py-20 px-6 md:px-12 bg-emerald-600">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
-          AINDA TEM <span className="text-green-500">DÚVIDA?</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-white">
+          AINDA TEM <span className="text-yellow-400">DÚVIDA?</span>
         </h2>
-        <p className="text-xl text-gray-300 text-center mb-12">
+        <p className="text-xl text-white/90 text-center mb-12">
           Veja os movimentos que você vai melhorar sua performance com uma boa mobilidade:
         </p>
         
@@ -48,7 +48,7 @@ const MovementsSection = () => {
           {movements.map((movement, index) => (
             <div 
               key={index} 
-              className="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+              className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-white/20"
             >
               <div className="h-64 overflow-hidden">
                 <img 
@@ -59,7 +59,7 @@ const MovementsSection = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{movement.name}</h3>
-                <p className="text-gray-400">{movement.description}</p>
+                <p className="text-white/80">{movement.description}</p>
               </div>
             </div>
           ))}
